@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java,数据结构与算法," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta name="description" content="Record process every day.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="fryiyueqi">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="summary: 昨天学习了链表，本着不总结不复习就等于白学的思想，于是宁愿多花些功夫把有关链表的知识点总结，希望自己没事的时候多多巩固。  链表的分类： 单链表 循环链表 双向链表（略） 双向循环列表  单链表概念： 一个链表由多个节点组成。 在一个节点中存在当前节点值，以及下一个节点的引用。 注意： 在单链表中只存在对下一个节点的引用，所以是无法根据当前节点去感知上一个节点，只能去感知下一个节">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于链表">
+<meta property="og:url" content="http://yoursite.com/2020/06/14/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8/index.html">
 <meta property="og:site_name" content="fryiyueqi">
-<meta property="og:description" content="Record process every day.">
+<meta property="og:description" content="summary: 昨天学习了链表，本着不总结不复习就等于白学的思想，于是宁愿多花些功夫把有关链表的知识点总结，希望自己没事的时候多多巩固。  链表的分类： 单链表 循环链表 双向链表（略） 双向循环列表  单链表概念： 一个链表由多个节点组成。 在一个节点中存在当前节点值，以及下一个节点的引用。 注意： 在单链表中只存在对下一个节点的引用，所以是无法根据当前节点去感知上一个节点，只能去感知下一个节">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-14T11:24:58.000Z">
+<meta property="article:modified_time" content="2020-06-14T12:08:31.897Z">
 <meta property="article:author" content="wang xin">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="数据结构与算法">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/06/14/关于链表/"/>
 
 
 
 
 
-  <title>fryiyueqi</title>
+  <title>关于链表 | fryiyueqi</title>
   
 
 
@@ -142,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +219,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/06/14/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8/" itemprop="url">关于链表</a></h1>
+          <h1 class="post-title" itemprop="name headline">关于链表</h1>
         
 
         <div class="post-meta">
@@ -322,9 +323,7 @@
       
 
       
-        
-          
-            <p>summary: 昨天学习了链表，本着不总结不复习就等于白学的思想，于是宁愿多花些功夫把有关链表的知识点总结，希望自己没事的时候多多巩固。</p>
+        <p>summary: 昨天学习了链表，本着不总结不复习就等于白学的思想，于是宁愿多花些功夫把有关链表的知识点总结，希望自己没事的时候多多巩固。</p>
 <hr>
 <h6 id="链表的分类："><a href="#链表的分类：" class="headerlink" title="链表的分类："></a>链表的分类：</h6><ul>
 <li>单链表</li>
@@ -347,8 +346,6 @@
 </blockquote>
 <p>##代码块</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">package node;</span><br><span class="line"></span><br><span class="line">public class DoubleNode &#123;</span><br><span class="line">    &#x2F;&#x2F; 节点内容</span><br><span class="line">    int value;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 循环实现POINT 前一个节点</span><br><span class="line">    DoubleNode preNode &#x3D; this;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 循环实现POINT 后一个节点</span><br><span class="line">    DoubleNode afterNode &#x3D; this;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 构造函数</span><br><span class="line">    public DoubleNode(int value)&#123;</span><br><span class="line">        this.value &#x3D; value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 添加节点</span><br><span class="line">    public void addNode(DoubleNode doubleNode)&#123;</span><br><span class="line">        DoubleNode currentNext &#x3D; afterNode;</span><br><span class="line">        this.afterNode &#x3D; doubleNode;</span><br><span class="line">        doubleNode.preNode &#x3D; this;</span><br><span class="line">        doubleNode.afterNode &#x3D; currentNext;</span><br><span class="line">        currentNext.preNode &#x3D; doubleNode;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 删除节点</span><br><span class="line">    public void deleteNode()&#123;</span><br><span class="line">        DoubleNode pre &#x3D; this.preNode;</span><br><span class="line">        DoubleNode after &#x3D; this.afterNode;</span><br><span class="line">        pre.afterNode &#x3D; after;</span><br><span class="line">        after.preNode &#x3D; pre;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 上一个节点</span><br><span class="line">    public DoubleNode getPre()&#123;</span><br><span class="line">        return preNode;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 下一个节点</span><br><span class="line">    public DoubleNode getAfter()&#123;</span><br><span class="line">        return afterNode;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 获取数据</span><br><span class="line">    public int getData()&#123;</span><br><span class="line">        return value;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -363,14 +360,22 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="tag"># 数据结构与算法</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -380,10 +385,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -391,6 +397,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -411,8 +421,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -472,6 +491,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#链表的分类："><span class="nav-number">1.</span> <span class="nav-text">链表的分类：</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单链表"><span class="nav-number"></span> <span class="nav-text">单链表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念：-一个链表由多个节点组成。-在一个节点中存在当前节点值，以及下一个节点的引用。"><span class="nav-number"></span> <span class="nav-text">概念： 一个链表由多个节点组成。 在一个节点中存在当前节点值，以及下一个节点的引用。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码块"><span class="nav-number"></span> <span class="nav-text">代码块</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环链表"><span class="nav-number"></span> <span class="nav-text">循环链表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念：-与单链表不同的是，循环链表的最后一个元素的引用指向第一个元素，由此构成了一个循环链表。"><span class="nav-number"></span> <span class="nav-text">概念： 与单链表不同的是，循环链表的最后一个元素的引用指向第一个元素，由此构成了一个循环链表。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码块-1"><span class="nav-number"></span> <span class="nav-text">代码块</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#双向循环列表"><span class="nav-number"></span> <span class="nav-text">双向循环列表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念：-与单项链表不同的是，双向列表除了一个指向下一个节点的变量之外，还有一个变量指向上一个节点。"><span class="nav-number"></span> <span class="nav-text">概念： 与单项链表不同的是，双向列表除了一个指向下一个节点的变量之外，还有一个变量指向上一个节点。</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -605,6 +640,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
