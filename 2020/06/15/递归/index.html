@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="工具类," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,17 +79,16 @@
 
 
 
-<meta name="description" content="sumary hexo 的整体使用方法总结   创建分页以categories为例     创建分页： hexo new page categories成功后提示INFO  Created: ~&#x2F;Documents&#x2F;blog&#x2F;source&#x2F;categories&#x2F;index.md  打开提示路径中的index文件，并添加type属性。(layout也可以一并添加上) 123456---title:">
+<meta name="description" content="summary 通过递归实现斐波那契和汉诺塔问题 ---   递归：程序调用自身的编程技巧  斐波那契 含义： 斐波那契数列由0和1开始，之后的斐波那契数就是由之前的两数相加而得出。0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...  代码块123456789101112131415161718192021&#x2F;&#x2F; 打印斐波那契数列的第n项package">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo使用总结">
-<meta property="og:url" content="http://yoursite.com/2020/06/15/hexo%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="递归">
+<meta property="og:url" content="http://yoursite.com/2020/06/15/%E9%80%92%E5%BD%92/index.html">
 <meta property="og:site_name" content="fryiyueqi&#39;s blog">
-<meta property="og:description" content="sumary hexo 的整体使用方法总结   创建分页以categories为例     创建分页： hexo new page categories成功后提示INFO  Created: ~&#x2F;Documents&#x2F;blog&#x2F;source&#x2F;categories&#x2F;index.md  打开提示路径中的index文件，并添加type属性。(layout也可以一并添加上) 123456---title:">
+<meta property="og:description" content="summary 通过递归实现斐波那契和汉诺塔问题 ---   递归：程序调用自身的编程技巧  斐波那契 含义： 斐波那契数列由0和1开始，之后的斐波那契数就是由之前的两数相加而得出。0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...  代码块123456789101112131415161718192021&#x2F;&#x2F; 打印斐波那契数列的第n项package">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-15T04:25:46.000Z">
-<meta property="article:modified_time" content="2020-06-15T14:11:12.183Z">
+<meta property="article:published_time" content="2020-06-15T13:44:42.000Z">
+<meta property="article:modified_time" content="2020-06-15T14:01:50.084Z">
 <meta property="article:author" content="wang xin">
-<meta property="article:tag" content="工具类">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/06/15/hexo使用总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/06/15/递归/"/>
 
 
 
 
 
-  <title>hexo使用总结 | fryiyueqi's blog</title>
+  <title>递归 | fryiyueqi's blog</title>
   
 
 
@@ -263,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/15/hexo%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/15/%E9%80%92%E5%BD%92/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wang xin">
@@ -280,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo使用总结</h1>
+          <h1 class="post-title" itemprop="name headline">递归</h1>
         
 
         <div class="post-meta">
@@ -292,7 +291,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-15T13:25:46+09:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-15T22:44:42+09:00">
                 2020-06-15
               </time>
             
@@ -302,28 +301,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -352,42 +329,23 @@
       
 
       
-        <center><b>sumary</b></center>
-<center>hexo 的整体使用方法总结</center>
+        <center><b>summary</b></center>
+<center>通过递归实现斐波那契和汉诺塔问题</center>
+---
 
-<hr>
-<h1 id="创建分页"><a href="#创建分页" class="headerlink" title="创建分页"></a>创建分页</h1><p>以categories为例   </p>
-<ol>
-<li><p>创建分页： <code>hexo new page categories</code><br>成功后提示<code>INFO  Created: ~/Documents/blog/source/categories/index.md</code></p>
-</li>
-<li><p>打开提示路径中的index文件，并添加type属性。(layout也可以一并添加上)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2020-06-14 20:51:18</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">layout: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
-<li><p>给新建文章添加分页（categories）属性<br>打开需要添加分类的文章， 为其添加categories属性</p>
 <blockquote>
-<p>注意：一篇文章只有属于一个分类，如果categories下面写了两个分类的话，则是属于分类a下的分类b中<br>tags操作与之相同，<br>只有添加了<code>tags:xxx</code>的文章才会被收录到首页的标签中。</p>
+<p>递归：程序调用自身的编程技巧</p>
 </blockquote>
-</li>
-<li><p>让每次<code>hexo new 文章名</code>时，都能够自动生成分类或标签选项。<br>打开<code>scaffolds/post.md</code>文件，添加你想要自动生成的选项。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">home: &#123;&#123; home &#125;&#125;</span><br><span class="line">about: &#123;&#123; about-me &#125;&#125;</span><br><span class="line">tags: &#123;&#123; tags &#125;&#125;</span><br><span class="line">categories: &#123;&#123; categories &#125;&#125;</span><br><span class="line">archives: &#123;&#123; archives &#125;&#125;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h1 id="斐波那契"><a href="#斐波那契" class="headerlink" title="斐波那契"></a>斐波那契</h1><blockquote>
+<p>含义： 斐波那契数列由0和1开始，之后的斐波那契数就是由之前的两数相加而得出。<br><code>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...</code></p>
+</blockquote>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 打印斐波那契数列的第n项</span><br><span class="line"></span><br><span class="line">package fibonacci;</span><br><span class="line"></span><br><span class="line">public class Fibonacci &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.print(fibonacci(7));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static int fibonacci(int value)&#123;</span><br><span class="line">        if(value &#x3D;&#x3D; 1)&#123;</span><br><span class="line">            return 0;</span><br><span class="line">        elif(value &#x3D;&#x3D; 2)&#123;</span><br><span class="line">            return 1;</span><br><span class="line">        &#125;</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            return fibonacci(value - 1) + fibonacci(value - 2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
-<h1 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h1><ul>
-<li>新建文章 <code>hexo new 文章名</code> &gt; 缩写<code>hexo n 文章名</code></li>
-</ul>
-<h1 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h1><ul>
-<li>新建一个网站 <code>hexo init</code></li>
-<li>发表草稿 <code>hexo publish [layout] &lt;filename&gt;</code></li>
-<li>生成静态文件<code>hexo generate</code>   &gt;缩写：<code>hexo g</code></li>
-<li>运行服务器预览效果<code>hexo server</code> &gt;缩写：<code>hexo s</code>  <ul>
-<li>重设端口 -p / –port</li>
-</ul>
-</li>
-<li>部署到github <code>hexo deploy</code> &gt;缩写：<code>hexo d</code></li>
-<li>清除缓存文件 ‘hexo clean’</li>
-<li>显示Hexo版本 <code>hexo version</code></li>
-</ul>
-
+<h1 id="汉诺塔"><a href="#汉诺塔" class="headerlink" title="汉诺塔"></a>汉诺塔</h1><blockquote>
+<p>含义： 汉诺塔（又称河内塔）问题是源于印度一个古老传说的益智玩具。大梵天创造世界的时候做了三根金刚石柱子，在一根柱子上从下往上按照大小顺序摞着64片黄金圆盘。大梵天命令婆罗门把圆盘从下面开始按大小顺序重新摆放在另一根柱子上。并且规定，在小圆盘上不能放大圆盘，在三根柱子之间一次只能移动一个圆盘。</p>
+</blockquote>
+<h3 id="代码块："><a href="#代码块：" class="headerlink" title="代码块："></a>代码块：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">package fibonacci;</span><br><span class="line"></span><br><span class="line">public class hanoi &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        </span><br><span class="line">        hanoi(3,&#39;A&#39;,&#39;B&#39;,&#39;C&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public static void hanoi(int n, char left,char mid, char right)&#123;</span><br><span class="line">        if(n &#x3D;&#x3D; 1)&#123;</span><br><span class="line">            System.out.println(&quot;把第&quot;+n+&quot;个盘子从&quot;+left+&quot;移到&quot;+right);</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            hanoi(n-1, left, right, mid);</span><br><span class="line">            System.out.println(&quot;把第&quot;+n+&quot;个盘子从&quot;+left+&quot;移到&quot;+right);</span><br><span class="line">            hanoi(n-1, mid, left, right);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="打印结果"><a href="#打印结果" class="headerlink" title="打印结果"></a>打印结果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">把第1个盘子从A移到C</span><br><span class="line">把第2个盘子从A移到B</span><br><span class="line">把第1个盘子从C移到B</span><br><span class="line">把第3个盘子从A移到C</span><br><span class="line">把第1个盘子从B移到A</span><br><span class="line">把第2个盘子从B移到C</span><br><span class="line">把第1个盘子从A移到C</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -402,12 +360,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/" rel="tag"># 工具类</a>
-          
-        </div>
-      
 
       
       
@@ -417,8 +369,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/06/15/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" rel="next" title="hexo环境搭建">
-                <i class="fa fa-chevron-left"></i> hexo环境搭建
+              <a href="/2020/06/15/hexo%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" rel="next" title="hexo使用总结">
+                <i class="fa fa-chevron-left"></i> hexo使用总结
               </a>
             
           </div>
@@ -426,10 +378,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/06/15/%E9%80%92%E5%BD%92/" rel="prev" title="递归">
-                递归 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -561,7 +509,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建分页"><span class="nav-number">1.</span> <span class="nav-text">创建分页</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建文章"><span class="nav-number">2.</span> <span class="nav-text">创建文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他指令"><span class="nav-number">3.</span> <span class="nav-text">其他指令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#斐波那契"><span class="nav-number">1.</span> <span class="nav-text">斐波那契</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块"><span class="nav-number">1.0.1.</span> <span class="nav-text">代码块</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#汉诺塔"><span class="nav-number">2.</span> <span class="nav-text">汉诺塔</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块："><span class="nav-number">2.0.1.</span> <span class="nav-text">代码块：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打印结果"><span class="nav-number">2.0.2.</span> <span class="nav-text">打印结果</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
