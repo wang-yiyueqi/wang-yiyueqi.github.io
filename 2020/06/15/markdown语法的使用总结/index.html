@@ -88,7 +88,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0256/8945/6711/files/topheady_360x.gif?v=1574150407">
 <meta property="article:published_time" content="2020-06-15T01:55:36.000Z">
-<meta property="article:modified_time" content="2020-06-16T00:14:14.060Z">
+<meta property="article:modified_time" content="2020-06-16T00:23:51.218Z">
 <meta property="article:author" content="wang xin">
 <meta property="article:tag" content="工具类">
 <meta name="twitter:card" content="summary">
@@ -370,13 +370,13 @@
 <li>在前一行的末尾至少加入两个空格。</li>
 <li>在前一行末尾加入 <code>&lt;br&gt;</code></li>
 </ol>
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><h2 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h2><p>在需要加粗的文字左右两边分别加上**<br>sample: <strong>HAVE A NICE DAY</strong></p>
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><h2 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h2><p>在需要加粗的文字左右两边分别加上<code>**</code><br>sample: <strong>HAVE A NICE DAY</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**HAVE A NICE DAY**</span><br></pre></td></tr></table></figure>
-<h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p>在需要使用斜体格式的文字左右两边分别加上*<br>sample： <em>HAVE A NICE DAY</em></p>
+<h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p>在需要使用斜体格式的文字左右两边分别加上<code>*</code><br>sample： <em>HAVE A NICE DAY</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*HAVE A NICE DAY*</span><br></pre></td></tr></table></figure>
-<h2 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h2><p>在需要使用斜体加粗格式的文字左右两边分别加上（<strong>*）<br>sample: *</strong>HAVE A NICE DAY***</p>
+<h2 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h2><p>在需要使用斜体加粗格式的文字左右两边分别加上<code>***</code><br>sample： <strong><em>HAVE A NICE DAY</em></strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***HAVE A NICE DAY***</span><br></pre></td></tr></table></figure>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>在需要使用删除线格式的文字左右两边分别加上两个~<br>sample： <del>HAVE A NICE DAY</del></p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>在需要使用删除线格式的文字左右两边分别加上<code>~~</code><br>sample： <del>HAVE A NICE DAY</del></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~HAVE A NICE DAY~~</span><br></pre></td></tr></table></figure>
 
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>在引用文字/句子前加上<code>&gt;</code><br>tips: 可以嵌套引用 <code>&gt;&gt;</code></p>
@@ -435,6 +435,25 @@
 <p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 姓名 | 城市 | 时间 |</span><br><span class="line">| :-- | :--: | --: |</span><br><span class="line">| HI | 中国成都 | 2014年 |</span><br><span class="line">| FR | 中国齐齐哈尔 | 2018年 |</span><br><span class="line">| YIYUEQI | 日本东京 | 2020年 |</span><br></pre></td></tr></table></figure>
 <p>效果：<br>| 姓名 | 城市 | 时间 |<br>| :– | :–: | –: |<br>| HI | 中国成都 | 2014年 |<br>| FR | 中国齐齐哈尔 | 2018年 |<br>| YIYUEQI | 日本东京 | 2020年 |</p>
+<table>
+<thead>
+<tr>
+<th align="left">left</th>
+<th align="center">center</th>
+<th align="right">right</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">aaaa</td>
+<td align="center">bbbbbb</td>
+<td align="right">ccccc</td>
+</tr>
+<tr>
+<td align="left">a</td>
+<td align="center">b</td>
+<td align="right">c</td>
+</tr>
+</tbody></table>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><ul>
 <li><p>单行代码  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hi &#96;code&#96;</span><br></pre></td></tr></table></figure>
