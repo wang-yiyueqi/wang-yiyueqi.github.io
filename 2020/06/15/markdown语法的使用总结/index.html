@@ -86,11 +86,13 @@
 <meta property="og:site_name" content="fryiyueqi&#39;s blog">
 <meta property="og:description" content="雑 由于markdown需要输出，自带html&#x2F;css整合，因此需要指定格式时可以通过内嵌html或者内嵌css来实现。例如文字居中&lt;center&gt;hi&lt;&#x2F;center&gt;左对齐&lt;p align&#x3D;&quot;left&quot;&gt;hi&lt;&#x2F;p&gt;   标题根据大小度分为六种不同的标题。需要注意的是，# 键 和 标题文字描述之间需要有一个半角空格字符。 12">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0256/8945/6711/files/topheady_360x.gif?v=1574150407">
 <meta property="article:published_time" content="2020-06-15T01:55:36.000Z">
-<meta property="article:modified_time" content="2020-06-15T14:08:27.846Z">
+<meta property="article:modified_time" content="2020-06-16T00:14:14.060Z">
 <meta property="article:author" content="wang xin">
 <meta property="article:tag" content="工具类">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0256/8945/6711/files/topheady_360x.gif?v=1574150407">
 
 
 
@@ -372,9 +374,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**HAVE A NICE DAY**</span><br></pre></td></tr></table></figure>
 <h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p>在需要使用斜体格式的文字左右两边分别加上*<br>sample： <em>HAVE A NICE DAY</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*HAVE A NICE DAY*</span><br></pre></td></tr></table></figure>
-<h2 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h2><p>在需要使用斜体加粗格式的文字左右两边分别加上<strong>*<br>sample: *</strong>HAVE A NICE DAY***</p>
+<h2 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h2><p>在需要使用斜体加粗格式的文字左右两边分别加上（<strong>*）<br>sample: *</strong>HAVE A NICE DAY***</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***HAVE A NICE DAY***</span><br></pre></td></tr></table></figure>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>在需要使用删除线格式的文字左右两边分别加上(<del>)<br>sample： ~</del>HAVE A NICE DAY~~</p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>在需要使用删除线格式的文字左右两边分别加上两个~<br>sample： <del>HAVE A NICE DAY</del></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~HAVE A NICE DAY~~</span><br></pre></td></tr></table></figure>
 
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>在引用文字/句子前加上<code>&gt;</code><br>tips: 可以嵌套引用 <code>&gt;&gt;</code></p>
@@ -383,11 +385,22 @@
 <li>使用三个或三个以上的<code>-</code>：<code>---</code></li>
 <li>使用三个或三个以上的<code>*</code>: <code>***</code></li>
 </ul>
-<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址  图片title&#39;&#39;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><ul>
+<li><p>本地图片：只需要在基础语法的括号中写入图片的地址，支持绝对地址和相对地址。<br>不灵活，不好分享，本地图片的路径更改和丢失都会造成无法访问图片。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![avatar](&#x2F;home&#x2F;picture&#x2F;1.png)</span><br></pre></td></tr></table></figure></li>
+<li><p>网络图片： 只需要在基础语法的括号中添加图片的网络地址即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址  &#39;&#39;图片title&#39;&#39;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure>
 <p>sample :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![have a nice day](https:&#x2F;&#x2F;cdn.shopify.com&#x2F;s&#x2F;files&#x2F;1&#x2F;0256&#x2F;8945&#x2F;6711&#x2F;files&#x2F;</span><br><span class="line">topheady_360x.gif?v&#x3D;1574150407 &#39;&#39;良い一日を&#39;&#39;)</span><br></pre></td></tr></table></figure>
-<p>效果：<br>![have a nice day](<a href="https://cdn.shopify.com/s/files/1/0256/8945/6711/files/" target="_blank" rel="noopener">https://cdn.shopify.com/s/files/1/0256/8945/6711/files/</a><br>topheady_360x.gif?v=1574150407 ‘’良い一日を’’)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![have a nice day](https:&#x2F;&#x2F;cdn.shopify.com&#x2F;s&#x2F;files&#x2F;1&#x2F;0256&#x2F;8945&#x2F;6711&#x2F;files&#x2F;topheady_360x.gif?v&#x3D;1574150407)</span><br></pre></td></tr></table></figure>
+<p>效果：<br><img src="https://cdn.shopify.com/s/files/1/0256/8945/6711/files/topheady_360x.gif?v=1574150407" alt="have a nice day"></p>
+</li>
+<li><p>把图片存入markdown文件： 用base64图片转码工具把图片转成一段字符串，然后把字符串填入链接位置中。<br>缺点：转码后的长字符串会将整个文章分割开，非常印象编写文章时的体验。<br>解决：将base64字符串放在文章末尾，然后在文章中通过一个id来调用。<br>示例：<br>▲使用python将图片转化为base64字符串:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import base64</span><br><span class="line">f&#x3D;open(&#39;723.png&#39;,&#39;rb&#39;) #二进制方式打开图文件</span><br><span class="line">ls_f&#x3D;base64.b64encode(f.read()) #读取文件内容，转换为base64编码</span><br><span class="line">f.close()</span><br><span class="line">print(ls_f)</span><br></pre></td></tr></table></figure>
+<p>▲使用python将64字符串转化成图片：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import base64</span><br><span class="line">bs&#x3D;&#39;iVBORw0KGgoAAAANSUhEUg....&#39; # 太长了省略</span><br><span class="line">imgdata&#x3D;base64.b64decode(bs)</span><br><span class="line">file&#x3D;open(&#39;2.jpg&#39;,&#39;wb&#39;)</span><br><span class="line">file.write(imgdata)</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
 <h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><p>语法： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;)</span><br><span class="line">title可加可不加</span><br></pre></td></tr></table></figure>
 <p>sample :  </p>
@@ -417,24 +430,19 @@
 </li>
 </ol>
 <h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">|表头|表头|表头|</span><br><span class="line">|:--|:--:|--:|</span><br><span class="line">|内容|内容|内容|</span><br><span class="line">|内容|内容|内容|</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure>
 
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|姓名|城市|时间|</span><br><span class="line">|--|:--:|--:|</span><br><span class="line">|HI|中国成都|2014年|</span><br><span class="line">|FR|中国齐齐哈尔|2018年|</span><br><span class="line">|YIYUEQI|日本东京|2020年|</span><br></pre></td></tr></table></figure>
-<p>效果：<br>|姓名|城市|时间|<br>|–|:–:|–:|<br>|HI|中国成都|2014年|<br>|FR|中国齐齐哈尔|2018年|<br>|YIYUEQI|日本东京|2020年|</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 姓名 | 城市 | 时间 |</span><br><span class="line">| :-- | :--: | --: |</span><br><span class="line">| HI | 中国成都 | 2014年 |</span><br><span class="line">| FR | 中国齐齐哈尔 | 2018年 |</span><br><span class="line">| YIYUEQI | 日本东京 | 2020年 |</span><br></pre></td></tr></table></figure>
+<p>效果：<br>| 姓名 | 城市 | 时间 |<br>| :– | :–: | –: |<br>| HI | 中国成都 | 2014年 |<br>| FR | 中国齐齐哈尔 | 2018年 |<br>| YIYUEQI | 日本东京 | 2020年 |</p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><ul>
 <li><p>单行代码  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hi &#96;code&#96;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>多行代码<br>为了防止转义 加上了小括号</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span><br><span class="line">code...</span><br><span class="line">(&#96;&#96;&#96;)</span><br></pre></td></tr></table></figure>
-
 </li>
 </ul>
-<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><p>语法示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">flow</span><br><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">op&#x3D;&gt;operation: My Operation</span><br><span class="line">cond&#x3D;&gt;condition: Yes or No?</span><br><span class="line">e&#x3D;&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-<p>效果:</p>
-<p>flow<br>st=&gt;start: Start<br>op=&gt;operation: Your Operation<br>cond=&gt;condition: Yes or No?<br>e=&gt;end<br>st-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op</p>
 
       
     </div>
@@ -609,7 +617,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#雑"><span class="nav-number">1.</span> <span class="nav-text">雑</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标题"><span class="nav-number">2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#段落与换行"><span class="nav-number">3.</span> <span class="nav-text">段落与换行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字体"><span class="nav-number">4.</span> <span class="nav-text">字体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#加粗"><span class="nav-number">4.1.</span> <span class="nav-text">加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#斜体"><span class="nav-number">4.2.</span> <span class="nav-text">斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#斜体加粗"><span class="nav-number">4.3.</span> <span class="nav-text">斜体加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除线"><span class="nav-number">4.4.</span> <span class="nav-text">删除线</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">5.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分割线"><span class="nav-number">6.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片"><span class="nav-number">7.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超链接"><span class="nav-number">8.</span> <span class="nav-text">超链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表"><span class="nav-number">9.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表格"><span class="nav-number">10.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">11.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流程图"><span class="nav-number">12.</span> <span class="nav-text">流程图</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#雑"><span class="nav-number">1.</span> <span class="nav-text">雑</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标题"><span class="nav-number">2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#段落与换行"><span class="nav-number">3.</span> <span class="nav-text">段落与换行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字体"><span class="nav-number">4.</span> <span class="nav-text">字体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#加粗"><span class="nav-number">4.1.</span> <span class="nav-text">加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#斜体"><span class="nav-number">4.2.</span> <span class="nav-text">斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#斜体加粗"><span class="nav-number">4.3.</span> <span class="nav-text">斜体加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除线"><span class="nav-number">4.4.</span> <span class="nav-text">删除线</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">5.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分割线"><span class="nav-number">6.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片"><span class="nav-number">7.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超链接"><span class="nav-number">8.</span> <span class="nav-text">超链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表"><span class="nav-number">9.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表格"><span class="nav-number">10.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">11.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
